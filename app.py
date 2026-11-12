@@ -316,14 +316,14 @@ elif page == "pythonid":
     st.title("🐍 파이썬 학습")
     st.info("현재 이 메뉴의 체류 시간을 측정 중입니다. 다른 메뉴를 선택하거나 로그아웃하면 초 단위로 저장됩니다.", icon="⏱️")
 
-    st.markdown("""
-    <div class="app-card">
-        <h4>왜 iframe에서 열리지 않았나?</h4>
-        <p class="muted">기존에 사용한 online-python.com 은 <code>X-Frame-Options: SAMEORIGIN</code> 헤더를 보내
-        다른 사이트 안에 iframe으로 넣는 것을 서버 차원에서 금지합니다. 그래서 화면이 비어 보였던 것입니다.
-        그래서 앱 안에 <b>직접 실행되는 파이썬 편집기를 내장</b>했습니다.</p>
-    </div>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    # <div class="app-card">
+    #     <h4>왜 iframe에서 열리지 않았나?</h4>
+    #     <p class="muted">기존에 사용한 online-python.com 은 <code>X-Frame-Options: SAMEORIGIN</code> 헤더를 보내
+    #     다른 사이트 안에 iframe으로 넣는 것을 서버 차원에서 금지합니다. 그래서 화면이 비어 보였던 것입니다.
+    #     그래서 앱 안에 <b>직접 실행되는 파이썬 편집기를 내장</b>했습니다.</p>
+    # </div>
+    # """, unsafe_allow_html=True)
 
     DEFAULT_CODE = '''# 코드를 수정하고 [▶ 실행] 버튼을 눌러보세요
 name = "AI 교육"
